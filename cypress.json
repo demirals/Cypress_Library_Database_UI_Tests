@@ -1,0 +1,36 @@
+{
+
+"baseURL": "https://....",
+
+"browser": "chrome",
+"library_url": "https://library2.cybertekschool.com/login.html",
+"librarian_username": "librarian14@library",
+"student_username": "student34@library",
+"password": "Sdet2022*",
+
+
+
+"library2.db.url": "jdbc:mysql://54.157.236.232:3306/library2",
+"library2.db.username": "library2_client",
+"library2.db.password": "6s2LQQTjBcGFfDhY",
+
+
+"hr_dbUrl": "jdbc:oracle:thin:@PUT_YOUR_IP_HERE:xe",
+"hr_username": "hr",
+"hr_password": "hr",
+
+"testFiles": "**/*.{feature,features}",
+
+
+    "env": {
+        "db": {
+          "host": "54.157.236.232",
+          "port": 3306,
+          "user": "library2_client",
+          "password": "6s2LQQTjBcGFfDhY",
+          "database": "library2"
+        }
+      }
+
+      
+}

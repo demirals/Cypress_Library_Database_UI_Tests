@@ -1,0 +1,38 @@
+[
+	{
+		"COLUMN_NAME" : "id"
+	},
+	{
+		"COLUMN_NAME" : "full_name"
+	},
+	{
+		"COLUMN_NAME" : "email"
+	},
+	{
+		"COLUMN_NAME" : "password"
+	},
+	{
+		"COLUMN_NAME" : "user_group_id"
+	},
+	{
+		"COLUMN_NAME" : "image"
+	},
+	{
+		"COLUMN_NAME" : "extra_data"
+	},
+	{
+		"COLUMN_NAME" : "status"
+	},
+	{
+		"COLUMN_NAME" : "is_admin"
+	},
+	{
+		"COLUMN_NAME" : "start_date"
+	},
+	{
+		"COLUMN_NAME" : "end_date"
+	},
+	{
+		"COLUMN_NAME" : "address"
+	}
+]

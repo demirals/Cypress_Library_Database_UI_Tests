@@ -1,0 +1,56 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a data consumer, I want the user information are stored in mySql DB correctly in users table.",
+    "line": 2,
+    "id": "as-a-data-consumer,-i-want-the-user-information-are-stored-in-mysql-db-correctly-in-users-table.",
+    "tags": [
+      {
+        "name": "@us01",
+        "line": 1
+      }
+    ],
+    "uri": "us01.feature",
+    "elements": [
+      {
+        "id": "as-a-data-consumer,-i-want-the-user-information-are-stored-in-mysql-db-correctly-in-users-table.;verify-users-has-unique-ids-and-verify-users-table-columns",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "verify users has unique IDs and verify users table columns",
+        "tags": [
+          {
+            "name": "@us01",
+            "line": 1
+          },
+          {
+            "name": "@db",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Execute query to get all IDs from users and verify all users has unique ID",
+            "result": {
+              "status": "passed",
+              "duration": 829000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Execute query to get all columns and verify the below columns are listed in result",
+            "result": {
+              "status": "passed",
+              "duration": 450000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -36,7 +36,7 @@
             "name": "Execute query to get all IDs from users and verify all users has unique ID",
             "result": {
               "status": "passed",
-              "duration": 829000000
+              "duration": 933000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "Execute query to get all columns and verify the below columns are listed in result",
             "result": {
               "status": "passed",
-              "duration": 450000000
+              "duration": 463000000
             }
           }
         ]

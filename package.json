@@ -4,23 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:open": "cypress open",
+    "test:qabox": "npx cypress-tags run --env \"TAGS=@qabox\"",
+    "test:tn1NOTtn2": "npx cypress-tags run --env \"TAGS=@tagname1 and not @tagname2\"",
+    "test:tn1ANDtn2": "npx cypress-tags run --env \"TAGS=@tagname1 AND @tagname2\"",
+    "test:tn1ORtn2": "npx cypress-tags run --env \"TAGS=@tagname1 OR @tagname2\"",
+    "clean:reports": "if exist cypress\\reports rmdir /S/Q cypress\\reports",
+    "pretest": "npm run clean:reports",
+    "scripts": "cypress run --browser chrome",
+    "posttest": "node cucumber-html-report.js",
+    "test": "npm run scripts || npm run posttest",
+    "test:echo": "echo \"Error: no test specified\" && exit 1",
+    "Library_Database_UI_Testing": "npx cypress run --record --key 2d92a570-1258-4436-9160-e9326baf930d 'cypress/integration/cucumber-test/us01/us01.spec.js' "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.5.4",
-    "cypress-cucumber-preprocessor": "^4.3.1",
+   
+
+
+
+    
     "multiple-cucumber-html-reporter": "^1.20.0",
     "mysql": "^2.18.1"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".cucumber"
-    }
   }
+  
 }

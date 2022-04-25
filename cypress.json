@@ -2,24 +2,15 @@
 
 "baseURL": "https://....",
 
-"browser": "chrome",
-"library_url": "https://library2.cybertekschool.com/login.html",
-"librarian_username": "librarian14@library",
-"student_username": "student34@library",
-"password": "Sdet2022*",
 
-
-
-"library2.db.url": "jdbc:mysql://54.157.236.232:3306/library2",
-"library2.db.username": "library2_client",
-"library2.db.password": "6s2LQQTjBcGFfDhY",
-
-
-"hr_dbUrl": "jdbc:oracle:thin:@PUT_YOUR_IP_HERE:xe",
-"hr_username": "hr",
-"hr_password": "hr",
-
-"testFiles": "**/*.{feature,features}",
+"defaultCommandTimeout": 1000,
+  "pageLoadTimeout": 8000,
+  "viewportHeight": 1028,
+  "viewportWidth": 1920,
+  
+  "chromeWebSecurity": false,
+  "failOnStatusCode": false,
+ 
 
 
     "env": {
@@ -30,7 +21,9 @@
           "password": "6s2LQQTjBcGFfDhY",
           "database": "library2"
         }
-      }
+      },
 
+     "projectId": "i4p1pq"
+         
       
 }

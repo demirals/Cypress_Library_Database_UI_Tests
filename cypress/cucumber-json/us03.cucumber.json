@@ -1,0 +1,57 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a librarian, I want to know genre of books are being borrowed the most",
+    "line": 2,
+    "id": "as-a-librarian,-i-want-to-know-genre-of-books-are-being-borrowed-the-most",
+    "tags": [
+      {
+        "name": "@us03",
+        "line": 1
+      }
+    ],
+    "uri": "us03.feature",
+    "elements": [
+      {
+        "id": "as-a-librarian,-i-want-to-know-genre-of-books-are-being-borrowed-the-most;verify-the-the-common-book-genre-that-is-being-borrowed",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "verify the the common book genre that is being borrowed",
+        "tags": [
+          {
+            "name": "@us03",
+            "line": 1
+          },
+          {
+            "name": "@db",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I execute query to find most popular book genre",
+            "result": {
+              "status": "passed",
+              "duration": 580000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify \"Action and Adventure\" is the most popular book genre.",
+            "result": {
+              "status": "failed",
+              "duration": 18000000,
+              "error_message": "ReferenceError: actualMostPop is not defined\n    at Context.eval (http://localhost:50099/__cypress/tests?p=cypress\\integration\\cucumber-test\\us03.feature:55:35)\n    at Context.resolveAndRunStepDefinition (http://localhost:50099/__cypress/tests?p=cypress\\integration\\cucumber-test\\us03.feature:10596:29)\n    at Context.eval (http://localhost:50099/__cypress/tests?p=cypress\\integration\\cucumber-test\\us03.feature:9917:35)\nFrom previous event:\n    at Context.thenFn (http://localhost:50099/__cypress/runner/cypress_runner.js:156317:63)\n    at Context.then (http://localhost:50099/__cypress/runner/cypress_runner.js:156769:21)\n    at Context.<anonymous> (http://localhost:50099/__cypress/runner/cypress_runner.js:173267:19)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:172123:15\nFrom previous event:\n    at CommandQueue.runCommand (http://localhost:50099/__cypress/runner/cypress_runner.js:172102:8)\n    at next (http://localhost:50099/__cypress/runner/cypress_runner.js:172245:19)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:172274:16\nFrom previous event:\n    at next (http://localhost:50099/__cypress/runner/cypress_runner.js:172245:39)\nFrom previous event:\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:186675:77\nFrom previous event:\n    at CommandQueue.run (http://localhost:50099/__cypress/runner/cypress_runner.js:186670:21)\n    at CommandQueue.run (http://localhost:50099/__cypress/runner/cypress_runner.js:172308:15)\n    at $Cy.cy.<computed> [as then] (http://localhost:50099/__cypress/runner/cypress_runner.js:173306:18)\n    at Context.runnable.fn (http://localhost:50099/__cypress/runner/cypress_runner.js:173524:19)\n    at callFn (http://localhost:50099/__cypress/runner/cypress_runner.js:125614:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:50099/__cypress/runner/cypress_runner.js:125601:7)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:180445:30\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:50099/__cypress/runner/cypress_runner.js:180430:19)\n    at $Cypress.action (http://localhost:50099/__cypress/runner/cypress_runner.js:169793:28)\n    at Test.Runnable.run (http://localhost:50099/__cypress/runner/cypress_runner.js:178107:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:50099/__cypress/runner/cypress_runner.js:126273:10)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:126399:12\n    at next (http://localhost:50099/__cypress/runner/cypress_runner.js:126182:14)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:126192:7\n    at next (http://localhost:50099/__cypress/runner/cypress_runner.js:126094:14)\n    at Hook.<anonymous> (http://localhost:50099/__cypress/runner/cypress_runner.js:126155:7)\n    at next (http://localhost:50099/__cypress/runner/cypress_runner.js:180343:24)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:180372:13\nFrom previous event:\n    at onNext (http://localhost:50099/__cypress/runner/cypress_runner.js:180369:59)\n    at done (http://localhost:50099/__cypress/runner/cypress_runner.js:125554:5)\n    at callFn (http://localhost:50099/__cypress/runner/cypress_runner.js:125637:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:50099/__cypress/runner/cypress_runner.js:125601:7)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:180445:30\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:50099/__cypress/runner/cypress_runner.js:180430:19)\n    at $Cypress.action (http://localhost:50099/__cypress/runner/cypress_runner.js:169793:28)\n    at Hook.Runnable.run (http://localhost:50099/__cypress/runner/cypress_runner.js:178107:13)\n    at next (http://localhost:50099/__cypress/runner/cypress_runner.js:126116:10)\n    at http://localhost:50099/__cypress/runner/cypress_runner.js:126160:5\n    at timeslice (http://localhost:50099/__cypress/runner/cypress_runner.js:120086:27)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

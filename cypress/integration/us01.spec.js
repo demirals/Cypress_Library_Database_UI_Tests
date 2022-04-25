@@ -1,14 +1,12 @@
-import { And, Given, Then, When } from "cypress-cucumber-preprocessor/steps"
-var data = require ('../../../fixtures/Column_Names.json')
+var data = require ('../fixtures/Column_Names.json')
 
 //Feature: As a data consumer, I want the user information are stored in mySql DB correctly in users table.
 
+describe('verify users has unique IDs',()=>{
 
-//Scenario('verify users has unique IDs')
-    Given('Execute query to get all IDs from users and verify all users has unique ID', function () {
+    it('Execute query to get all IDs from users and verify all users has unique ID',()=>{
+
         cy.task("queryDb", {
-
-            
 
             dbConfig: Cypress.env("db"),
             sql: `
@@ -21,10 +19,10 @@ var data = require ('../../../fixtures/Column_Names.json')
            console.log(new Set(array).size == array.length)
 
         })
+
     })
 
-    Then ('Execute query to get all columns and verify the below columns are listed in result', function(){
-
+    it('Execute query to get all columns and verify the below columns are listed in result',()=>{
         cy.task("queryDb", {
     
             dbConfig: Cypress.env("db"),
@@ -53,11 +51,12 @@ var data = require ('../../../fixtures/Column_Names.json')
                 return true;
             
             }
-                                   
-              
-            console.log( checkArrays(result,data) );  
+                     
+            console.log(checkArrays(result,data) );  
            
-
         })
-
+       
     })
+
+})
+

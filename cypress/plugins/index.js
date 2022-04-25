@@ -40,9 +40,26 @@ function queryTestDb(query, config) {
   })
 }
 
-const cucumber = require('cypress-cucumber-preprocessor').default
+//nuncucumber icin devre disi biraktim
+//const cucumber = require('cypress-cucumber-preprocessor').default
+
+//asagidaki metni de package.json dosyasina ekle
+// "cypress-cucumber-preprocessor": "^4.3.1",
+//"cypress-cucumber-preprocessor": {
+//  "nonGlobalStepDefinitions": true,
+//  "cucumberJson": {
+//     "generate": true,
+//     "outputFolder": "cypress/cucumber-json",
+//     "filePrefix": "",
+//     "fileSuffix": ".cucumber"
+//   }
+// }
+
+//cypress.json dosyasina asagidakini ekle
+// "testFiles": "**/*.feature",
+
 
 module.exports = (on, config) => {
   on('task', { queryDb: query => { return queryTestDb(query, config) }, }); //For running sql query
-  on('file:preprocessor', cucumber());
+//  on('file:preprocessor', cucumber());
 }

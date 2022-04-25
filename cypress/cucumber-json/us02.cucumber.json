@@ -1,0 +1,61 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a librarian, I want to know who borrowed books",
+    "line": 2,
+    "id": "as-a-librarian,-i-want-to-know-who-borrowed-books",
+    "tags": [
+      {
+        "name": "@us02",
+        "line": 1
+      }
+    ],
+    "uri": "us02.feature",
+    "elements": [
+      {
+        "id": "as-a-librarian,-i-want-to-know-who-borrowed-books;verify-the-amount-of-borrowed-books",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "verify the amount of borrowed books",
+        "tags": [
+          {
+            "name": "@us02",
+            "line": 1
+          },
+          {
+            "name": "@db",
+            "line": 3
+          },
+          {
+            "name": "@ui",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am in the homepage of library app",
+            "result": {
+              "status": "passed",
+              "duration": 3724000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I take borrowed books number",
+            "result": {
+              "status": "failed",
+              "duration": 17000000,
+              "error_message": "TypeError: Cannot read properties of null (reading 'textContent')\n    at Context.eval (https://library2.cybertekschool.com/__cypress/tests?p=cypress\\integration\\cucumber-test\\us02.feature:50:55)\n    at Context.resolveAndRunStepDefinition (https://library2.cybertekschool.com/__cypress/tests?p=cypress\\integration\\cucumber-test\\us02.feature:10604:29)\n    at Context.eval (https://library2.cybertekschool.com/__cypress/tests?p=cypress\\integration\\cucumber-test\\us02.feature:9925:35)\nFrom previous event:\n    at Context.thenFn (https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:156317:63)\n    at Context.then (https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:156769:21)\n    at Context.<anonymous> (https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:173267:19)\n    at https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:172123:15\nFrom previous event:\n    at CommandQueue.runCommand (https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:172102:8)\n    at next (https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:172245:19)\n    at https://library2.cybertekschool.com/__cypress/runner/cypress_runner.js:172274:16"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

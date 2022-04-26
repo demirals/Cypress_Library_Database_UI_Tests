@@ -25,6 +25,10 @@ describe('verify book categories with DB',()=>{
 
      it('Get book categories from DB and UI, and then verify book categories must match',()=>{
         
+
+          ///////////////////Dies Code muss repariert werden///////////////////////////
+
+
            //take all book categories from UI
         cy.get('#book_categories').each(($el, index)=>{
             

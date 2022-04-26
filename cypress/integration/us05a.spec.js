@@ -29,7 +29,9 @@ describe('verify book information with DB',()=>{
 
 
     it('execute query to get the book information from books table and verify book DB and UI information must match',()=>{
-
+        
+        ///////////////////Dies Code muss repariert werden///////////////////////////
+        
         //get BOOK information from DB
         cy.task("queryDb", {
     
